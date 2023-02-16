@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QyonAdventureWorks", "QyonAdventureWorks\QyonAdventureWorks.csproj", "{8F3152ED-9533-433A-AF65-8B012F3ACA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorksAPI", "QyonAdventureWorks\AdventureWorksAPI.csproj", "{8F3152ED-9533-433A-AF65-8B012F3ACA4A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{DDC51BEB-F758-4CCB-87FE-D99D3B142FFC}"
 EndProject
