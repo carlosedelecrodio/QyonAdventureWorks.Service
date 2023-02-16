@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "27b71c80-80af-4d6c-8d6a-b25d5216f044",
+		"name": "QyonAdventureWorks - Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22234591"
+	},
+	"item": [
+		{
+			"name": "Competidores",
+			"item": [
+				{
+					"name": "Competidor - Buscar por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Competitor/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Competitor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Competidor - Lista de comp sem corrida",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/Competitor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Competitor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Competidor - Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Name\": \"João\",\r\n  \"Gender\": \"M\",\r\n  \"AverageTemperature\": 36.5,\r\n  \"Weight\": 75.5,\r\n  \"Height\": 1.75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Competitor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Competitor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Competidor - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCompetitor\": 1,\r\n    \"name\": \"João\",\r\n    \"gender\": \"M\",\r\n    \"averageTemperature\": 37.5,\r\n    \"weight\": 75.5,\r\n    \"height\": 1.75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Competitor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Competitor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Competidor - Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCompetitor\": 1,\r\n    \"name\": \"João\",\r\n    \"gender\": \"M\",\r\n    \"averageTemperature\": 37.5,\r\n    \"weight\": 75.5,\r\n    \"height\": 1.75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/Competitor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"Competitor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pista de corrida",
+			"item": [
+				{
+					"name": "Pista de Corrida - Buscar por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/RaceTrack/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceTrack",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pista de corrida - Já utilizadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/RaceTrack/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceTrack",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pista de Corrida - Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Description\": \"Pista 32\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/RaceTrack/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceTrack",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pista de Corrida - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdRaceTrack\": 1,\r\n    \"Description\": \"Pista 40\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/RaceTrack/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceTrack",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pista de Corrida - Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdRaceTrack\": 1,\r\n    \"Description\": \"Pista 40\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/RaceTrack/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceTrack",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Histórico de corrida",
+			"item": [
+				{
+					"name": "Histórico - Competidores com tempo médio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/RaceHistory/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceHistory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Histórico - Buscar por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/RaceHistory/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceHistory",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Histórico - Criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdCompetitor\": 1,\r\n    \"IdRaceTrack\": 1,\r\n    \"RaceDate\": \"2023-02-01\",\r\n    \"TimeSpent\": 5.7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/RaceHistory/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceHistory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Histórico - Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdRaceHistory\": 1,\r\n    \"IdCompetitor\": 1,\r\n    \"IdRaceTrack\": 2,\r\n    \"RaceDate\": \"2023-02-01\",\r\n    \"TimeSpent\": 8.9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/RaceHistory/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceHistory",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Histórico - Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdRaceHistory\": 1,\r\n    \"IdCompetitor\": 1,\r\n    \"IdRaceTrack\": 2,\r\n    \"RaceDate\": \"2023-02-01\",\r\n    \"TimeSpent\": 8.9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/api/RaceHistory/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"RaceHistory",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
