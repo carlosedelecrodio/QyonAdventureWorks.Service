@@ -12,7 +12,6 @@ namespace AdventureWorks.Application.Dtos
         public int IdRaceHistory { get; set; }
 
         [Required]
-        [ForeignKey("Competitors")]
         public int IdCompetitor { get; set; }
 
         [Required]

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AdventureWorks.Application.Interfaces
 {
-    public interface IApplicationServiceCompetitors
+    public interface IApplicationServiceCompetitor
     {
         CompetitorDto GetById(int id);
 

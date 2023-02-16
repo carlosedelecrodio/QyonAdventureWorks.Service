@@ -20,7 +20,8 @@ namespace AdventureWorks.Data.Config
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql(GetStringConnect());
+                optionsBuilder.UseNpgsql(GetStringConnect(),
+                                    x => x.MigrationsAssembly("InitialMigration"));
                 base.OnConfiguring(optionsBuilder);
             }
         }

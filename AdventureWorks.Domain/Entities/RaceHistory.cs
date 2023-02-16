@@ -12,7 +12,6 @@ namespace AdventureWorks.Domain.Entities
         public int IdRaceHistory { get; set; }
 
         [Required]
-        [ForeignKey("Competitors")]
         public int IdCompetitor { get; set; }
 
         [Required]
