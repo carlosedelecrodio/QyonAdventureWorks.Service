@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QyonAdventureWorks", "QyonAdventureWorks\QyonAdventureWorks.csproj", "{8F3152ED-9533-433A-AF65-8B012F3ACA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QyonAdventureWorks", "QyonAdventureWorks\QyonAdventureWorks.csproj", "{8F3152ED-9533-433A-AF65-8B012F3ACA4A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{DDC51BEB-F758-4CCB-87FE-D99D3B142FFC}"
 EndProject
@@ -15,15 +15,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F48B54AF-9F85-470A-BDEF-E3DFE860D8F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Data", "Data\AdventureWorks.Data.csproj", "{F35FA46F-7B6A-4841-BD54-6D99E7F0B7A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Data", "Data\AdventureWorks.Data.csproj", "{F35FA46F-7B6A-4841-BD54-6D99E7F0B7A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Services", "AdventureWorks.Services\AdventureWorks.Services.csproj", "{8D3DF520-241A-47DA-B793-E7E64B52C99D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Services", "AdventureWorks.Services\AdventureWorks.Services.csproj", "{8D3DF520-241A-47DA-B793-E7E64B52C99D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Domain", "AdventureWorks.Domain\AdventureWorks.Domain.csproj", "{B5D1662D-3F33-411D-A2E5-2FE74D46470B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Domain", "AdventureWorks.Domain\AdventureWorks.Domain.csproj", "{B5D1662D-3F33-411D-A2E5-2FE74D46470B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Application", "AdventureWorks.Application\AdventureWorks.Application.csproj", "{EDBF964C-CD67-4559-B24D-940E5A214850}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Application", "AdventureWorks.Application\AdventureWorks.Application.csproj", "{EDBF964C-CD67-4559-B24D-940E5A214850}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL_Scripts", "SQL_Scripts", "{C6645F32-33FA-43FE-A130-AA0CA9D7F820}"
+	ProjectSection(SolutionItems) = preProject
+		..\Nova pasta\Create Table Competitors.sql = ..\Nova pasta\Create Table Competitors.sql
+		..\Nova pasta\Create Table RaceHistory.sql = ..\Nova pasta\Create Table RaceHistory.sql
+		..\Nova pasta\Create Table RaceTrack.sql = ..\Nova pasta\Create Table RaceTrack.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

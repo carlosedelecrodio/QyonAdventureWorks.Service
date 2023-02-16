@@ -47,13 +47,17 @@ namespace QyonAdventureWorks
 
             services.AddScoped<IApplicationServiceCompetitor, ApplicationServiceCompetitor>();
             services.AddScoped<IApplicationServiceRaceHistory, ApplicationServiceRaceHistory>();
+            services.AddScoped<IApplicationServiceRaceTrack, ApplicationServiceRaceTrack>();
+
+            services.AddScoped<IApplicationValidations, ApplicationValidations>();
+
             services.AddScoped<ICompetitorService, CompetitorService>();
             services.AddScoped<IRaceHistoryService, RaceHistoryService>();
+            services.AddScoped<IRaceTrackService, RaceTrackService>();
 
             services.AddScoped<ICompetitorMapper, CompetitorMapper>();
             services.AddScoped<IRaceHistoryMapper, RaceHistoryMapper>();
-            services.AddScoped<IApplicationValidations, ApplicationValidations>();
-
+            services.AddScoped<IRaceTrackMapper, RaceTrackMapper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

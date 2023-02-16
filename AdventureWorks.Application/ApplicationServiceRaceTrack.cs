@@ -14,14 +14,15 @@ namespace AdventureWorks.Application
     {
         private readonly IRaceTrackService raceTrackService;
         private IRaceTrackMapper raceTrackMapper;
-        private IApplicationValidations applicationValidations;
+        private IApplicationValidations validations;
         private readonly IRaceHistoryService raceHistoryService;
 
-        public ApplicationServiceRaceTrack(IRaceTrackService raceTrackService, IRaceTrackMapper raceTrackMapper, IApplicationValidations applicationValidations)
+        public ApplicationServiceRaceTrack(IRaceTrackService raceTrackService, IRaceTrackMapper raceTrackMapper, IApplicationValidations validations, IRaceHistoryService raceHistoryService)
         {
             this.raceTrackService = raceTrackService;
             this.raceTrackMapper = raceTrackMapper;
-            this.applicationValidations = applicationValidations;
+            this.validations = validations;
+            this.raceHistoryService = raceHistoryService;
         }
 
         public void Add(RaceTrackDto raceTrackDto)
